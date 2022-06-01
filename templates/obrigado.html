@@ -1,0 +1,93 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Obrigado
+    </title>
+    <link
+      rel="shortcut icon"
+      href="{% static '/images/favicon.png' %}"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="{% static '/css/animate.css' %}" />
+    <link rel="stylesheet" href="{% static '/css/tailwind.css' %}" />
+
+
+    <!-- ==== WOW JS ==== -->
+    <script src="{% static '/js/wow.min.js' %}"></script>
+    <script src="{% static '/js/chatscript.js' %}"></script>
+    <script>
+      new WOW().init();
+    </script>
+  </head>
+  <body>
+    <!-- ====== Navbar Section Start -->
+    <div
+      class="ud-header absolute top-0 left-0 z-40 flex w-full items-center bg-transparent"
+    >
+      <a id="nome_sala"></a>
+      <div class="container">
+        <div class="relative -mx-4 flex items-center justify-between">
+          <div class="w-40 max-w-full px-4">
+            <a href="index.html" class="navbar-logo block w-full py-5">
+              <img id="logoimg"
+                src="{% static '/images/logo/technologo.png' %}"
+                alt="logo"
+                class="header-logo w-full"
+                style="opacity: 0.6;"
+              />
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <!-- ====== Navbar Section End -->
+
+    <!-- ====== Hero Section Start -->
+    <div
+      id="home"
+      class="relative overflow-hidden bg-primary pt-[120px] md:pt-[130px] lg:pt-[160px]"
+    >
+      <div class="container">
+        <div class="-mx-4 flex flex-wrap items-center">
+          <div class="w-full px-4">
+            <div
+              class="hero-content wow fadeInUp mx-auto max-w-[780px] text-center"
+              data-wow-delay=".2s"
+            >
+              <h1
+                class="mb-8 text-3xl font-bold leading-snug text-white sm:text-4xl sm:leading-snug md:text-[30px] md:leading-snug"
+              >
+                  Obrigado!             </h1>
+
+
+            </div>
+            <div
+              class="hero-content wow fadeInUp mx-auto max-w-[780px] text-center"
+              data-wow-delay=".2s"
+            >
+              <h1
+                class="mb-8 text-3xl font-bold leading-snug text-balck sm:text-4xl sm:leading-snug md:text-[30px] md:leading-snug"
+              >
+                  Obrigado!             </h1>
+          </div>
+
+
+
+        </div>
+      </div>
+    </div>
+    <script>
+      window.addEventListener('load', function () {
+
+         setTimeout(() => { window.location.href = "/";} , 5000);
+         });
+    </script>
+  </body>
+
+</html>
